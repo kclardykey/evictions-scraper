@@ -29,18 +29,18 @@ with open(f'files/hearings_scraped_on_{cleaned_today}.csv', 'w', newline='') as 
     writer = csv.writer(file)
     writer.writerow(create_headers())
 
-# date range - number of days backwards, and number of days forwards
-# date_range = 70
-# start_date = datetime.today() - timedelta(date_range)
-# date_list = [start_date + timedelta(days=x) for x in range(date_range * 2)]
+date range - number of days backwards, and number of days forwards
+date_range = 70
+start_date = datetime.today() - timedelta(date_range)
+date_list = [start_date + timedelta(days=x) for x in range(date_range * 2)]
 
 #for specific dates
-start_date = datetime(2026, 1, 1)
-end_date = datetime(2026, 10, 1)
+#start_date = datetime(2026, 1, 1)
+#end_date = datetime(2026, 10, 1)
 
-date_range = (end_date - start_date).days + 1
+#date_range = (end_date - start_date).days + 1
 
-date_list = [start_date + timedelta(days=x) for x in range(date_range)]
+#date_list = [start_date + timedelta(days=x) for x in range(date_range)]
 
 
 # rows list for summary page
